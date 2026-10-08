@@ -8,6 +8,12 @@ This step runs your Android project's unit tests.
 <summary>Description</summary>
 
 This step runs your Android project's unit tests.
+
+### Attachments
+
+The Step also exports the screenshots, recordings and logs that belong to its test cases, so they show up under the test in the Test Reports. An attachment belongs to a test case if its file name follows the `<classname>__<name>[__run<k>]__<label>.<ext>` convention, for example `com.example.LoginTest__emptyState__1.png`.
+
+The Step looks for these files under the **Project Location**. Files tracked by git, such as committed reference images, are never exported.
 </details>
 
 ## 🧩 Get started
